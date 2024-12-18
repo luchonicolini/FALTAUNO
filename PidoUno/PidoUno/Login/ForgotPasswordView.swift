@@ -97,9 +97,9 @@ struct ForgotPasswordView: View {
                         
                         Button(action: resetPassword) {
                             Text("Enviar")
-                                .font(.system(size: 18))
                                 .padding(.vertical, 8)
-                                .foregroundStyle(Color.primary)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                                .fontWeight(.medium)
                                 .frame(maxWidth: .infinity)
                                 .opacity(isResettingPassword ? 0.5 : 1.0)
                                 .scaleEffect(isResettingPassword ? 0.95 : 1.0)
@@ -113,18 +113,15 @@ struct ForgotPasswordView: View {
                             dismiss()
                             
                         }, label: {
-                            HStack {
+                            HStack(spacing: 6) {
                                 Text("Recordo su contraseña?")
-                                    .font(.system(size: 16))
-                                    .foregroundStyle(Color(.gris))
-                                Text("Iniciar sesion")
-                                    .font(.system(size: 17, weight: .semibold))
-                                    .foregroundStyle(Color.primary)
-                                    
+                                Text("Acceder")
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.blue)
                             }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            
+                            .foregroundColor(.primary)
                         })
+                        .padding([.top, .bottom], 10)
                         Spacer()
                     }
                     
@@ -141,7 +138,6 @@ struct ForgotPasswordView: View {
         }
     }
 }
-
 
 
 #Preview {

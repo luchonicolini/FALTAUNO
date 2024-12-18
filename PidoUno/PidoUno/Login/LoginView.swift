@@ -119,24 +119,20 @@ struct LoginView: View {
                         .background(Divider(), alignment: .bottom)
                         .padding(.bottom, 8)
                         
-                        
-                        // Sign In Button
-                        //signInWithEmail
-                        Button(action: signInWithEmail) {
-                            Text("Iniciar Sesion")
-                                .font(.system(size: 18))
-                                .padding(.vertical, 8)
-                                .foregroundStyle(Color.primary)
-                                .frame(maxWidth: .infinity)
-                                .opacity(isLoading ? 0.5 : 1.0)
-                                .scaleEffect(isLoading ? 0.95 : 1.0)
+                        NavigationLink {
+                            ForgotPasswordView(viewModel: authViewModel)
+                                .navigationBarBackButtonHidden(true)
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: .trailing).combined(with: .opacity),
+                                    removal: .move(edge: .leading).combined(with: .opacity)
+                                ))
+                                .animation(.easeInOut(duration: 0.3), value: true)
+                        } label: {
+                            Text("¿Has olvidado tu contraseña?")
+                                .font(.caption)
+                                .foregroundColor(.blue)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
-                        .disabled(isLoading)
-                        .animation(.spring(), value: isLoading)
-                        .frame(maxWidth: .infinity)
-                        .buttonStyle(.bordered)
-                        
-                   
                         
                         // Error Message
                         if !authViewModel.errorMessage.isEmpty {
@@ -156,18 +152,10 @@ struct LoginView: View {
                             .padding(.bottom, 8)
                         }
                         
-                      
-                        
-                        HStack {
-                            VStack { Divider() }
-                            Text("or")
-                            VStack { Divider() }
-                        }
-                        
                         //signInWithGoogle
                         Button(action: signInWithGoogle) {
-                            Text("Iniciar sesion con Google")
-                                .font(.system(size: 18, weight: .medium, design: .rounded))
+                            Text("Iniciar sesión con Google")
+                                .font(.system(size: 17, weight: .medium))
                                 .padding(.vertical, 8)
                                 .frame(maxWidth: .infinity)
                                 .background(alignment: .leading) {
@@ -197,23 +185,29 @@ struct LoginView: View {
                         .cornerRadius(8)
                         
                         
-                        //Has olvidado tu contraseña?
-                        NavigationLink {
-                            ForgotPasswordView(viewModel: authViewModel)
-                                .navigationBarBackButtonHidden(true)
-                                .transition(.asymmetric(
-                                    insertion: .move(edge: .trailing).combined(with: .opacity),
-                                    removal: .move(edge: .leading).combined(with: .opacity)
-                                ))
-                                .animation(.easeInOut(duration: 0.3), value: true)
-                        } label: {
-                            Text("¿Has olvidado tu contraseña?")
-                                .font(.system(size: 16))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .tint(Color.primary)
+                        HStack {
+                            VStack { Divider() }
+                            Text("or")
+                            VStack { Divider() }
                         }
-                        .padding(.vertical,1)
-
+                        
+                        // Sign In Button
+                        //signInWithEmail
+                        Button(action: signInWithEmail) {
+                            Text("Iniciar Sesion")
+                                .font(.system(size: 17, weight: .medium))
+                                .padding(.vertical, 8)
+                                .foregroundColor(.primary)
+                                .frame(maxWidth: .infinity)
+                                .opacity(isLoading ? 0.5 : 1.0)
+                                .scaleEffect(isLoading ? 0.95 : 1.0)
+                        }
+                        .disabled(isLoading)
+                        .animation(.spring(), value: isLoading)
+                        .frame(maxWidth: .infinity)
+                        .buttonStyle(.bordered)
+                        
+                        
                         NavigationLink {
                             SignupView()
                                 .navigationBarBackButtonHidden(true)
@@ -224,15 +218,12 @@ struct LoginView: View {
                                 .animation(.easeInOut(duration: 0.3), value: true)
                         } label: {
                             HStack(spacing: 6) {
-                                Text("¿Aun no tienes cuenta?")
-                                    .font(.system(size: 16))
+                                Text("Aun no tiene cuenta?")
                                 Text("Registrate")
-                                    .font(.system(size: 16, weight: .medium))
-                                    .tint(Color.primary)
-                                  
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.blue)
                             }
-                            .tint(Color(.gris))
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundColor(.primary)
                         }
                         .padding(.bottom, 10)
                         
