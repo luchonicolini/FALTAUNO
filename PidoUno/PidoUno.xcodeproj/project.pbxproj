@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19090A162D0DC87E002E5AD1 /* PidoUnoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A152D0DC87E002E5AD1 /* PidoUnoApp.swift */; };
+		19090A182D0DC87E002E5AD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A172D0DC87E002E5AD1 /* ContentView.swift */; };
+		19090A1A2D0DC883002E5AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19090A192D0DC883002E5AD1 /* Assets.xcassets */; };
+		19090A1D2D0DC883002E5AD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19090A1C2D0DC883002E5AD1 /* Preview Assets.xcassets */; };
+		19090A272D0DC884002E5AD1 /* PidoUnoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A262D0DC884002E5AD1 /* PidoUnoTests.swift */; };
+		19090A312D0DC884002E5AD1 /* PidoUnoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A302D0DC884002E5AD1 /* PidoUnoUITests.swift */; };
+		19090A332D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A322D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift */; };
+		19090A422D0DCD00002E5AD1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A412D0DCCFF002E5AD1 /* HomeView.swift */; };
+		19090A452D0DCD6B002E5AD1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A442D0DCD6B002E5AD1 /* Profile.swift */; };
+		19090A472D0DD331002E5AD1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A462D0DD331002E5AD1 /* LoginView.swift */; };
+		19090A4D2D0DE281002E5AD1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A4C2D0DE281002E5AD1 /* FirebaseAuth */; };
+		19090A512D0DE398002E5AD1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A502D0DE398002E5AD1 /* Authentication.swift */; };
+		19090A542D0E0FF2002E5AD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A532D0E0FF2002E5AD1 /* GoogleSignIn */; };
+		19090A562D0E1017002E5AD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A552D0E1017002E5AD1 /* GoogleSignInSwift */; };
+		19090A5A2D0E12B4002E5AD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19090A592D0E12B4002E5AD1 /* GoogleService-Info.plist */; };
+		199012122D1087FE00EDD5DA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199012112D1087FE00EDD5DA /* SignupView.swift */; };
+		199012142D10E9A200EDD5DA /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199012132D10E9A100EDD5DA /* ForgotPasswordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19090A232D0DC884002E5AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19090A0A2D0DC87E002E5AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19090A112D0DC87E002E5AD1;
+			remoteInfo = PidoUno;
+		};
+		19090A2D2D0DC884002E5AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19090A0A2D0DC87E002E5AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19090A112D0DC87E002E5AD1;
+			remoteInfo = PidoUno;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19090A122D0DC87E002E5AD1 /* PidoUno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PidoUno.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19090A152D0DC87E002E5AD1 /* PidoUnoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PidoUnoApp.swift; sourceTree = "<group>"; };
+		19090A172D0DC87E002E5AD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19090A192D0DC883002E5AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19090A1C2D0DC883002E5AD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19090A222D0DC884002E5AD1 /* PidoUnoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PidoUnoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19090A262D0DC884002E5AD1 /* PidoUnoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PidoUnoTests.swift; sourceTree = "<group>"; };
+		19090A2C2D0DC884002E5AD1 /* PidoUnoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PidoUnoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19090A302D0DC884002E5AD1 /* PidoUnoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PidoUnoUITests.swift; sourceTree = "<group>"; };
+		19090A322D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PidoUnoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19090A412D0DCCFF002E5AD1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		19090A442D0DCD6B002E5AD1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		19090A462D0DD331002E5AD1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		19090A502D0DE398002E5AD1 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		19090A592D0E12B4002E5AD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19090A5B2D0E1380002E5AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		19090A5C2D0E299B002E5AD1 /* PidoUno.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PidoUno.entitlements; sourceTree = "<group>"; };
+		199012112D1087FE00EDD5DA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		199012132D10E9A100EDD5DA /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19090A0F2D0DC87E002E5AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19090A562D0E1017002E5AD1 /* GoogleSignInSwift in Frameworks */,
+				19090A4D2D0DE281002E5AD1 /* FirebaseAuth in Frameworks */,
+				19090A542D0E0FF2002E5AD1 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19090A1F2D0DC884002E5AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19090A292D0DC884002E5AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19090A092D0DC87E002E5AD1 = {
+			isa = PBXGroup;
+			children = (
+				19090A4E2D0DE33A002E5AD1 /* ViewModel */,
+				19090A432D0DCD15002E5AD1 /* Config */,
+				19090A3F2D0DCCCD002E5AD1 /* Login */,
+				19090A402D0DCCDE002E5AD1 /* Main */,
+				19090A142D0DC87E002E5AD1 /* PidoUno */,
+				19090A252D0DC884002E5AD1 /* PidoUnoTests */,
+				19090A2F2D0DC884002E5AD1 /* PidoUnoUITests */,
+				19090A132D0DC87E002E5AD1 /* Products */,
+				19090A4B2D0DE281002E5AD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19090A132D0DC87E002E5AD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19090A122D0DC87E002E5AD1 /* PidoUno.app */,
+				19090A222D0DC884002E5AD1 /* PidoUnoTests.xctest */,
+				19090A2C2D0DC884002E5AD1 /* PidoUnoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19090A142D0DC87E002E5AD1 /* PidoUno */ = {
+			isa = PBXGroup;
+			children = (
+				19090A5C2D0E299B002E5AD1 /* PidoUno.entitlements */,
+				19090A5B2D0E1380002E5AD1 /* Info.plist */,
+				19090A152D0DC87E002E5AD1 /* PidoUnoApp.swift */,
+				19090A172D0DC87E002E5AD1 /* ContentView.swift */,
+				19090A592D0E12B4002E5AD1 /* GoogleService-Info.plist */,
+				19090A192D0DC883002E5AD1 /* Assets.xcassets */,
+				19090A1B2D0DC883002E5AD1 /* Preview Content */,
+			);
+			path = PidoUno;
+			sourceTree = "<group>";
+		};
+		19090A1B2D0DC883002E5AD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				19090A1C2D0DC883002E5AD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19090A252D0DC884002E5AD1 /* PidoUnoTests */ = {
+			isa = PBXGroup;
+			children = (
+				19090A262D0DC884002E5AD1 /* PidoUnoTests.swift */,
+			);
+			path = PidoUnoTests;
+			sourceTree = "<group>";
+		};
+		19090A2F2D0DC884002E5AD1 /* PidoUnoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19090A302D0DC884002E5AD1 /* PidoUnoUITests.swift */,
+				19090A322D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift */,
+			);
+			path = PidoUnoUITests;
+			sourceTree = "<group>";
+		};
+		19090A3F2D0DCCCD002E5AD1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				19090A462D0DD331002E5AD1 /* LoginView.swift */,
+				199012112D1087FE00EDD5DA /* SignupView.swift */,
+				199012132D10E9A100EDD5DA /* ForgotPasswordView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		19090A402D0DCCDE002E5AD1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				19090A412D0DCCFF002E5AD1 /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		19090A432D0DCD15002E5AD1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				19090A442D0DCD6B002E5AD1 /* Profile.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		19090A4B2D0DE281002E5AD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19090A4E2D0DE33A002E5AD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19090A4F2D0DE36E002E5AD1 /* Authentication */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19090A4F2D0DE36E002E5AD1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				19090A502D0DE398002E5AD1 /* Authentication.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19090A112D0DC87E002E5AD1 /* PidoUno */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19090A362D0DC884002E5AD1 /* Build configuration list for PBXNativeTarget "PidoUno" */;
+			buildPhases = (
+				19090A0E2D0DC87E002E5AD1 /* Sources */,
+				19090A0F2D0DC87E002E5AD1 /* Frameworks */,
+				19090A102D0DC87E002E5AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PidoUno;
+			packageProductDependencies = (
+				19090A4C2D0DE281002E5AD1 /* FirebaseAuth */,
+				19090A532D0E0FF2002E5AD1 /* GoogleSignIn */,
+				19090A552D0E1017002E5AD1 /* GoogleSignInSwift */,
+			);
+			productName = PidoUno;
+			productReference = 19090A122D0DC87E002E5AD1 /* PidoUno.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19090A212D0DC884002E5AD1 /* PidoUnoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19090A392D0DC884002E5AD1 /* Build configuration list for PBXNativeTarget "PidoUnoTests" */;
+			buildPhases = (
+				19090A1E2D0DC884002E5AD1 /* Sources */,
+				19090A1F2D0DC884002E5AD1 /* Frameworks */,
+				19090A202D0DC884002E5AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19090A242D0DC884002E5AD1 /* PBXTargetDependency */,
+			);
+			name = PidoUnoTests;
+			productName = PidoUnoTests;
+			productReference = 19090A222D0DC884002E5AD1 /* PidoUnoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19090A2B2D0DC884002E5AD1 /* PidoUnoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19090A3C2D0DC884002E5AD1 /* Build configuration list for PBXNativeTarget "PidoUnoUITests" */;
+			buildPhases = (
+				19090A282D0DC884002E5AD1 /* Sources */,
+				19090A292D0DC884002E5AD1 /* Frameworks */,
+				19090A2A2D0DC884002E5AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19090A2E2D0DC884002E5AD1 /* PBXTargetDependency */,
+			);
+			name = PidoUnoUITests;
+			productName = PidoUnoUITests;
+			productReference = 19090A2C2D0DC884002E5AD1 /* PidoUnoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19090A0A2D0DC87E002E5AD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					19090A112D0DC87E002E5AD1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					19090A212D0DC884002E5AD1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 19090A112D0DC87E002E5AD1;
+					};
+					19090A2B2D0DC884002E5AD1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 19090A112D0DC87E002E5AD1;
+					};
+				};
+			};
+			buildConfigurationList = 19090A0D2D0DC87E002E5AD1 /* Build configuration list for PBXProject "PidoUno" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19090A092D0DC87E002E5AD1;
+			packageReferences = (
+				19090A4A2D0DE020002E5AD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				19090A522D0E0FE1002E5AD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 19090A132D0DC87E002E5AD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19090A112D0DC87E002E5AD1 /* PidoUno */,
+				19090A212D0DC884002E5AD1 /* PidoUnoTests */,
+				19090A2B2D0DC884002E5AD1 /* PidoUnoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19090A102D0DC87E002E5AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19090A1D2D0DC883002E5AD1 /* Preview Assets.xcassets in Resources */,
+				19090A5A2D0E12B4002E5AD1 /* GoogleService-Info.plist in Resources */,
+				19090A1A2D0DC883002E5AD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19090A202D0DC884002E5AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19090A2A2D0DC884002E5AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19090A0E2D0DC87E002E5AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199012122D1087FE00EDD5DA /* SignupView.swift in Sources */,
+				19090A422D0DCD00002E5AD1 /* HomeView.swift in Sources */,
+				199012142D10E9A200EDD5DA /* ForgotPasswordView.swift in Sources */,
+				19090A452D0DCD6B002E5AD1 /* Profile.swift in Sources */,
+				19090A182D0DC87E002E5AD1 /* ContentView.swift in Sources */,
+				19090A472D0DD331002E5AD1 /* LoginView.swift in Sources */,
+				19090A162D0DC87E002E5AD1 /* PidoUnoApp.swift in Sources */,
+				19090A512D0DE398002E5AD1 /* Authentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19090A1E2D0DC884002E5AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19090A272D0DC884002E5AD1 /* PidoUnoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19090A282D0DC884002E5AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19090A312D0DC884002E5AD1 /* PidoUnoUITests.swift in Sources */,
+				19090A332D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19090A242D0DC884002E5AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19090A112D0DC87E002E5AD1 /* PidoUno */;
+			targetProxy = 19090A232D0DC884002E5AD1 /* PBXContainerItemProxy */;
+		};
+		19090A2E2D0DC884002E5AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19090A112D0DC87E002E5AD1 /* PidoUno */;
+			targetProxy = 19090A2D2D0DC884002E5AD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19090A342D0DC884002E5AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19090A352D0DC884002E5AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19090A372D0DC884002E5AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PidoUno/PidoUno.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PidoUno/Preview Content\"";
+				DEVELOPMENT_TEAM = WEE3S3NWZ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PidoUno/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luchonic.PidoUno;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19090A382D0DC884002E5AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PidoUno/PidoUno.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PidoUno/Preview Content\"";
+				DEVELOPMENT_TEAM = WEE3S3NWZ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PidoUno/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luchonic.PidoUno;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19090A3A2D0DC884002E5AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEE3S3NWZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luchonic.PidoUnoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PidoUno.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PidoUno";
+			};
+			name = Debug;
+		};
+		19090A3B2D0DC884002E5AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEE3S3NWZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luchonic.PidoUnoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PidoUno.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PidoUno";
+			};
+			name = Release;
+		};
+		19090A3D2D0DC884002E5AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEE3S3NWZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luchonic.PidoUnoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PidoUno;
+			};
+			name = Debug;
+		};
+		19090A3E2D0DC884002E5AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEE3S3NWZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luchonic.PidoUnoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PidoUno;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19090A0D2D0DC87E002E5AD1 /* Build configuration list for PBXProject "PidoUno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19090A342D0DC884002E5AD1 /* Debug */,
+				19090A352D0DC884002E5AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19090A362D0DC884002E5AD1 /* Build configuration list for PBXNativeTarget "PidoUno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19090A372D0DC884002E5AD1 /* Debug */,
+				19090A382D0DC884002E5AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19090A392D0DC884002E5AD1 /* Build configuration list for PBXNativeTarget "PidoUnoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19090A3A2D0DC884002E5AD1 /* Debug */,
+				19090A3B2D0DC884002E5AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19090A3C2D0DC884002E5AD1 /* Build configuration list for PBXNativeTarget "PidoUnoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19090A3D2D0DC884002E5AD1 /* Debug */,
+				19090A3E2D0DC884002E5AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19090A4A2D0DE020002E5AD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		19090A522D0E0FE1002E5AD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19090A4C2D0DE281002E5AD1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19090A4A2D0DE020002E5AD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		19090A532D0E0FF2002E5AD1 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19090A522D0E0FE1002E5AD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		19090A552D0E1017002E5AD1 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19090A522D0E0FE1002E5AD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 19090A0A2D0DC87E002E5AD1 /* Project object */;
+}
