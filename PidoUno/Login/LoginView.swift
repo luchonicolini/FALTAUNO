@@ -56,7 +56,7 @@ struct LoginView: View {
                     VStack {
                         
                         Text("Iniciar Sesion")
-                            .font(.title)
+                            .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.primary)
                         
@@ -119,20 +119,43 @@ struct LoginView: View {
                         .background(Divider(), alignment: .bottom)
                         .padding(.bottom, 8)
                         
+                        NavigationLink {
+                            ForgotPasswordView(viewModel: authViewModel)
+                                .navigationBarBackButtonHidden(true)
+                                .transition(.asymmetric(
+                                    insertion: .move(edge: .trailing).combined(with: .opacity),
+                                    removal: .move(edge: .leading).combined(with: .opacity)
+                                ))
+                                .animation(.easeInOut(duration: 0.3), value: true)
+                        } label: {
+                            Text("¿Has olvidado tu contraseña?")
+                                .font(.caption)
+                                .foregroundColor(.blue)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                        }
+                        
                         // Error Message
                         if !authViewModel.errorMessage.isEmpty {
-                            Text(authViewModel.errorMessage)
-                                .font(.caption)
-                                .foregroundColor(.red)
-                                .transition(.asymmetric(insertion: .move(edge: .bottom).combined(with: .opacity),
-                                                        removal: .move(edge: .top).combined(with: .opacity)))
-                                .animation(.easeInOut(duration: 0.3), value: authViewModel.errorMessage)
+                            HStack {
+                                Image(systemName: "exclamationmark.triangle.fill")
+                                    .foregroundColor(.red)
+                                    .font(.caption)
+                                
+                                Text(authViewModel.errorMessage)
+                                    .font(.caption)
+                                    .foregroundColor(Color(UIColor.systemRed))
+                                    .transition(.asymmetric(insertion: .move(edge: .bottom).combined(with: .opacity),
+                                                            removal: .move(edge: .top).combined(with: .opacity)))
+                                    .animation(.easeInOut(duration: 0.3), value: authViewModel.errorMessage)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.bottom, 8)
                         }
                         
                         //signInWithGoogle
                         Button(action: signInWithGoogle) {
                             Text("Iniciar sesión con Google")
-                                .font(.system(size: 17, weight: .semibold))
+                                .font(.system(size: 17, weight: .medium))
                                 .padding(.vertical, 8)
                                 .frame(maxWidth: .infinity)
                                 .background(alignment: .leading) {
@@ -141,7 +164,7 @@ struct LoginView: View {
                                 }
                             
                         }
-                        .foregroundColor(colorScheme == .dark ? .white : .black)
+                        .foregroundStyle(.primary)
                         .buttonStyle(.bordered)
                         
                         
@@ -161,7 +184,7 @@ struct LoginView: View {
                         .frame(maxWidth: .infinity, minHeight: 50)
                         .cornerRadius(8)
                         
-      
+                        
                         HStack {
                             VStack { Divider() }
                             Text("or")
@@ -172,10 +195,9 @@ struct LoginView: View {
                         //signInWithEmail
                         Button(action: signInWithEmail) {
                             Text("Iniciar Sesion")
-                                .font(.system(size: 17, weight: .semibold))
+                                .font(.system(size: 17, weight: .medium))
                                 .padding(.vertical, 8)
                                 .foregroundColor(.primary)
-                                .fontWeight(.medium)
                                 .frame(maxWidth: .infinity)
                                 .opacity(isLoading ? 0.5 : 1.0)
                                 .scaleEffect(isLoading ? 0.95 : 1.0)
@@ -184,7 +206,7 @@ struct LoginView: View {
                         .animation(.spring(), value: isLoading)
                         .frame(maxWidth: .infinity)
                         .buttonStyle(.bordered)
-                    
+                        
                         
                         NavigationLink {
                             SignupView()
