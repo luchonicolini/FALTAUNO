@@ -1,2 +1,1 @@
 # FALTAUNO
-app de personas 
