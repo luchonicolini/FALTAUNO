@@ -19,7 +19,6 @@ struct SignupView: View {
     @Environment(\.dismiss) var dismiss
     @State private var registrationSuccessful = false
     @FocusState private var focus: FocusableField?
-    @State private var showLoginAfterRegistration = false
     
     private func signUpWithEmailPassword() {
         Task {
@@ -104,15 +103,16 @@ struct SignupView: View {
                         //ButtonView
                         Button(action: signUpWithEmailPassword) {
                             Text("Crear Cuenta")
-                                .font(.system(size: 18))
+                                .font(.system(size: 17, weight: .semibold))
                                 .padding(.vertical, 8)
+                                .fontWeight(.medium)
                                 .frame(maxWidth: .infinity)
                                 .opacity(viewModel.authenticationState == .authenticating ? 0.5 : 1.0)
                                 .scaleEffect(viewModel.authenticationState == .authenticating ? 0.95 : 1.0)
                         }
                         .frame(maxWidth: .infinity)
                         .buttonStyle(.bordered)
-                        .foregroundStyle(Color.primary)
+                        .foregroundStyle(.primary)
                         .disabled(viewModel.authenticationState == .authenticating)
                         .animation(.spring(), value: viewModel.authenticationState)
                         
@@ -123,25 +123,21 @@ struct SignupView: View {
                         }, label: {
                             HStack(spacing: 6) {
                                 Text("Ya tiene una cuenta?")
-                                    .font(.system(size: 16))
-                                    .foregroundStyle(Color(.gris))
                                 Text("Acceder")
-                                    .font(.system(size: 17, weight: .semibold))
-                                    .foregroundStyle(Color.primary)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.blue)
                             }
+                            .foregroundColor(.primary)
                         })
                         .padding([.top, .bottom], 10)
                         
                     }
                     .alert(isPresented: $registrationSuccessful) {
-                        Alert(
-                            title: Text("Registro Exitoso"),
-                            message: Text("Se ha enviado un correo electrónico para verificar su cuenta."),
-                            dismissButton: .default(Text("Ok"), action: {
-                                showLoginAfterRegistration = true
-                            })
-                        )
+                        Alert(title: Text("Registro Exitoso"),
+                              message: Text("Se ha enviado un correo electrónico para verificar su cuenta."),
+                              dismissButton: .default(Text("Ok"), action: {
+                            dismiss()
+                        }))
                     }
                 }
                 .listStyle(.plain)
