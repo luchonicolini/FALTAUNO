@@ -25,33 +25,6 @@ enum AuthenticationState {
     case authenticated
 }
 
-
-enum ErrorDescriptions: LocalizedError {
-    case emailAlreadyInUse
-        case weakPassword
-        case invalidEmail
-        case passwordsDoNotMatch
-        case emailNotVerified
-        case userNotFound
-        case invalidCredential
-        case userDisabled
-        case operationNotAllowed
-        case tooManyRequests
-        case tokenMissing
-        case unableToSerializeTokenString
-        case invalidAuthenticationState
-        case networkError
-        case timeOutError
-        case cancelledByUser
-        case providerDisabled
-        case invalidProvider
-        case missingName
-        case missingEmail
-        case missingPassword
-        case invalidName
-        case unknown(Error)
-}
-
 @Observable
 class AuthenticationViewModel {
     var email: String = ""
@@ -115,7 +88,7 @@ class AuthenticationViewModel {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             if !result.user.isEmailVerified {
-                errorMessage = NSLocalizedString("Verifique su dirección de correo electrónico antes de iniciar sesión", comment: "Please verify your email address before signing in")
+                errorMessage = NSLocalizedString("Please verify your email address before signing in.", comment: "")
                 authenticationState = .unauthenticated
                 return false
             }
@@ -137,16 +110,20 @@ class AuthenticationViewModel {
         authenticationState = .authenticating // Estado de carga
         
         guard password == confirmPassword else {
+            print("❌ Contraseñas no coinciden")
             errorMessage = NSLocalizedString("Passwords do not match.", comment: "")
             authenticationState = .unauthenticated // Reset state on error
             return false
         }
         
         do {
+            print("🚀 Intentando crear usuario con email: \(email)")
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            print("✅ Usuario creado: \(result.user.uid)")
             
             try await sendEmailVerification(for: result.user)
-    
+            print("📧 Verificación de email enviada")
+            
             // Importante: establecer el estado de autenticación manualmente
             authenticationState = .authenticated
             
@@ -179,6 +156,7 @@ class AuthenticationViewModel {
     
     private func sendEmailVerification(for user: User) async throws {
         try await user.sendEmailVerification()
+        print("Verification email sent.")
     }
     
     // MARK: - SignOut

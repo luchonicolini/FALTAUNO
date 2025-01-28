@@ -15,19 +15,15 @@
 		19090A312D0DC884002E5AD1 /* PidoUnoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A302D0DC884002E5AD1 /* PidoUnoUITests.swift */; };
 		19090A332D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A322D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift */; };
 		19090A422D0DCD00002E5AD1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A412D0DCCFF002E5AD1 /* HomeView.swift */; };
+		19090A452D0DCD6B002E5AD1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A442D0DCD6B002E5AD1 /* Profile.swift */; };
 		19090A472D0DD331002E5AD1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A462D0DD331002E5AD1 /* LoginView.swift */; };
 		19090A4D2D0DE281002E5AD1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A4C2D0DE281002E5AD1 /* FirebaseAuth */; };
 		19090A512D0DE398002E5AD1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19090A502D0DE398002E5AD1 /* Authentication.swift */; };
 		19090A542D0E0FF2002E5AD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A532D0E0FF2002E5AD1 /* GoogleSignIn */; };
 		19090A562D0E1017002E5AD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19090A552D0E1017002E5AD1 /* GoogleSignInSwift */; };
 		19090A5A2D0E12B4002E5AD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19090A592D0E12B4002E5AD1 /* GoogleService-Info.plist */; };
-		19282D412D146DCA00E4F2F8 /* PlayerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19282D402D146DCA00E4F2F8 /* PlayerFormView.swift */; };
-		19282D432D146E7100E4F2F8 /* PlayerFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19282D422D146E7100E4F2F8 /* PlayerFormViewModel.swift */; };
-		19282D452D14B2FA00E4F2F8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 19282D442D14B2FA00E4F2F8 /* FirebaseFirestore */; };
-		19282D4A2D15AE6F00E4F2F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19282D492D15AE6F00E4F2F8 /* CardView.swift */; };
 		199012122D1087FE00EDD5DA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199012112D1087FE00EDD5DA /* SignupView.swift */; };
 		199012142D10E9A200EDD5DA /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199012132D10E9A100EDD5DA /* ForgotPasswordView.swift */; };
-		199E78652D13373E00E7E76D /* ErrorDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E78642D13373E00E7E76D /* ErrorDescriptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,17 +55,14 @@
 		19090A302D0DC884002E5AD1 /* PidoUnoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PidoUnoUITests.swift; sourceTree = "<group>"; };
 		19090A322D0DC884002E5AD1 /* PidoUnoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PidoUnoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		19090A412D0DCCFF002E5AD1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		19090A442D0DCD6B002E5AD1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		19090A462D0DD331002E5AD1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		19090A502D0DE398002E5AD1 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		19090A592D0E12B4002E5AD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19090A5B2D0E1380002E5AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		19090A5C2D0E299B002E5AD1 /* PidoUno.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PidoUno.entitlements; sourceTree = "<group>"; };
-		19282D402D146DCA00E4F2F8 /* PlayerFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFormView.swift; sourceTree = "<group>"; };
-		19282D422D146E7100E4F2F8 /* PlayerFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFormViewModel.swift; sourceTree = "<group>"; };
-		19282D492D15AE6F00E4F2F8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		199012112D1087FE00EDD5DA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		199012132D10E9A100EDD5DA /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		199E78642D13373E00E7E76D /* ErrorDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescriptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19090A562D0E1017002E5AD1 /* GoogleSignInSwift in Frameworks */,
-				19282D452D14B2FA00E4F2F8 /* FirebaseFirestore in Frameworks */,
 				19090A4D2D0DE281002E5AD1 /* FirebaseAuth in Frameworks */,
 				19090A542D0E0FF2002E5AD1 /* GoogleSignIn in Frameworks */,
 			);
@@ -104,9 +96,8 @@
 		19090A092D0DC87E002E5AD1 = {
 			isa = PBXGroup;
 			children = (
-				19282D482D15AE2600E4F2F8 /* Views */,
 				19090A4E2D0DE33A002E5AD1 /* ViewModel */,
-				19090A432D0DCD15002E5AD1 /* From */,
+				19090A432D0DCD15002E5AD1 /* Config */,
 				19090A3F2D0DCCCD002E5AD1 /* Login */,
 				19090A402D0DCCDE002E5AD1 /* Main */,
 				19090A142D0DC87E002E5AD1 /* PidoUno */,
@@ -184,12 +175,12 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		19090A432D0DCD15002E5AD1 /* From */ = {
+		19090A432D0DCD15002E5AD1 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				19282D402D146DCA00E4F2F8 /* PlayerFormView.swift */,
+				19090A442D0DCD6B002E5AD1 /* Profile.swift */,
 			);
-			path = From;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		19090A4B2D0DE281002E5AD1 /* Frameworks */ = {
@@ -203,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				19090A4F2D0DE36E002E5AD1 /* Authentication */,
-				19282D422D146E7100E4F2F8 /* PlayerFormViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,17 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				19090A502D0DE398002E5AD1 /* Authentication.swift */,
-				199E78642D13373E00E7E76D /* ErrorDescriptions.swift */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		19282D482D15AE2600E4F2F8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				19282D492D15AE6F00E4F2F8 /* CardView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +226,6 @@
 				19090A4C2D0DE281002E5AD1 /* FirebaseAuth */,
 				19090A532D0E0FF2002E5AD1 /* GoogleSignIn */,
 				19090A552D0E1017002E5AD1 /* GoogleSignInSwift */,
-				19282D442D14B2FA00E4F2F8 /* FirebaseFirestore */,
 			);
 			productName = PidoUno;
 			productReference = 19090A122D0DC87E002E5AD1 /* PidoUno.app */;
@@ -366,16 +346,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				199E78652D13373E00E7E76D /* ErrorDescriptions.swift in Sources */,
 				199012122D1087FE00EDD5DA /* SignupView.swift in Sources */,
-				19282D412D146DCA00E4F2F8 /* PlayerFormView.swift in Sources */,
-				19282D432D146E7100E4F2F8 /* PlayerFormViewModel.swift in Sources */,
 				19090A422D0DCD00002E5AD1 /* HomeView.swift in Sources */,
 				199012142D10E9A200EDD5DA /* ForgotPasswordView.swift in Sources */,
+				19090A452D0DCD6B002E5AD1 /* Profile.swift in Sources */,
 				19090A182D0DC87E002E5AD1 /* ContentView.swift in Sources */,
 				19090A472D0DD331002E5AD1 /* LoginView.swift in Sources */,
 				19090A162D0DC87E002E5AD1 /* PidoUnoApp.swift in Sources */,
-				19282D4A2D15AE6F00E4F2F8 /* CardView.swift in Sources */,
 				19090A512D0DE398002E5AD1 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,11 +732,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 19090A522D0E0FE1002E5AD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
-		};
-		19282D442D14B2FA00E4F2F8 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 19090A4A2D0DE020002E5AD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
